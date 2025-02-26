@@ -31,9 +31,19 @@ const Navbar = () => {
       onClick={() => setIsOpen(!isOpen)}
       className="lg:hidden text-white focus:outline-none"
     >
-      {isOpen ? <p>close</p> : <p>open</p>}
-    </button>
-
+      {isOpen ?
+      <div className="flex flex-col">
+        <span className="bg-white w-6 h-1 mb-1"></span>
+        <span className="bg-white w-6 h-1 mb-1"></span>
+        <span className="bg-white w-6 h-1 mb-1"></span>
+      </div>
+      : <div className="">
+                <span className="bg-white w-6 h-1 mb-1 "></span>
+                <span className="bg-white w-6 h-1 mb-1 "></span>
+        </div>
+   
+    }
+   </button>
     {/* Desktop Menu */}
     <ul className="hidden lg:flex space-x-6">
       {navLinks.map(({ name, path }) => (

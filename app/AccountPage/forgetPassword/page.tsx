@@ -1,6 +1,6 @@
-// app/forgot-password/page.tsx
+
 import Link from "next/link";
-import React from "react";
+
 
 export default function ForgotPasswordPage() {
   return (
@@ -45,13 +45,13 @@ export default function ForgotPasswordPage() {
 
           <div className="mt-4 text-center">
             <p className="text-gray-700">
-              Remember your password?{" "}
+             
               <Link href="/AccountPage/login" className="text-blue-500 hover:underline">
                 Back to login
               </Link>
             </p>
             <p className="text-gray-700 mt-2">
-              Don't have an account?{" "}
+           
               <Link href="/AccountPage/register" className="text-blue-500 hover:underline">
                 Request Register
               </Link>

@@ -1,5 +1,6 @@
 // app/personal-data/page.tsx
 import React from "react";
+import Image from "next/image";
 
 export default function PersonalDataPage() {
   return (
@@ -15,10 +16,12 @@ export default function PersonalDataPage() {
           <form>
             {/* Profile Image & File Input */}
             <div className="flex items-center mb-8 space-x-4">
-              <img
+              <Image
                 src="/images/profile-picture.png"
                 alt="Profile Photo"
                 className="w-28 h-28 rounded-full object-cover"
+                width={112}
+                height={112}
               />
               <div>
                 <label className="block text-gray-700 font-medium mb-2">
