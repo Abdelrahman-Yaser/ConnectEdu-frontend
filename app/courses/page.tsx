@@ -1,7 +1,8 @@
 // app/courses/page.tsx
 import Link from "next/link";
+import CreatePostPage from "../post /page";
 
-import React from "react";
+
 
 export default function CoursesPage() {
   const courses = [
@@ -70,6 +71,7 @@ export default function CoursesPage() {
 
   return (
     <>
+    <CreatePostPage/>
       <div className="container mx-auto mt-5 px-4">
         <div className="text-center text-2xl font-bold mb-5 text-gray-800">
           <i className="fas fa-book mr-2"></i> Available Courses
