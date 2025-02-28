@@ -1,6 +1,6 @@
 // app/courses/page.tsx
 import Link from "next/link";
-import Image from "next/image";
+
 import React from "react";
 
 export default function CoursesPage() {
@@ -79,7 +79,7 @@ export default function CoursesPage() {
           {courses.map((course, index) => (
             <Link key={index} href="/materials">
               <div className="bg-gray-200 p-4 rounded-lg shadow hover:shadow-lg transition">
-              {/* <Image src=".././" alt="course" width={200} height={200} /> */}
+            
             
               
                 <h4 className="text-xl font-semibold text-gray-800">{course.name}</h4>

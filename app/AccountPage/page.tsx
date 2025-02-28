@@ -1,5 +1,5 @@
 // app/account/page.tsx
-import React, { Profiler } from "react";
+
 import LoginPage from "./login/page";
 import PersonalDataPage from "./profile/page";
 
