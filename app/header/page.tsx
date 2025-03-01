@@ -1,5 +1,5 @@
 "use client";
-import { console } from "inspector";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -7,11 +7,11 @@ import { useState } from "react";
 const navLinks = [
   { name: "Courses", path: "/courses" },
   { name: "Posts", path: "/post" },
-  { name: "Article", path: "/createArticle" },
+  { name: "Article", path: "/createArticle/viewArticle" },
   { name: "About Us", path: "/about" },
   { name: "My Profile", path: "/AccountPage" },
 ];
-console.log(navLinks);
+
 const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
